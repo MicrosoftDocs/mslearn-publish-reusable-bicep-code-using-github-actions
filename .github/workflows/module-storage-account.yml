@@ -9,6 +9,10 @@ on:
     paths:
       - 'modules/storage-account/**'
 
+permissions:
+  id-token: write
+  contents: read
+
 env:
   MODULE_NAME: storage-account
   MODULE_REGISTRY_SERVER: # To be added.

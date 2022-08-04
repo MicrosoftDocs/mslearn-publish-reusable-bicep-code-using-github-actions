@@ -9,6 +9,10 @@ on:
     paths:
       - 'template-specs/linux-app-service/**'
 
+permissions:
+  id-token: write
+  contents: read
+
 env:
   AZURE_RESOURCEGROUP_NAME: ToyReusable
   AZURE_REGION: westus3
